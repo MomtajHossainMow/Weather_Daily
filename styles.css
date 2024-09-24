@@ -1,0 +1,32 @@
+body {
+    background-color: #eef2f3;
+}
+
+h1 {
+    color: #333;
+}
+
+.card {
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card-img-top {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+#weather-data {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
