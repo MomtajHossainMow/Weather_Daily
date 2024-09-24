@@ -1,5 +1,5 @@
 // API Key: ae4a8364aece4372a7551536242309
-const apiKey = 'ae4a8364aece4372a7551536242309'; // Replace with the WeatherAPI key
+const apiKey = 'ae4a8364aece4372a7551536242309'; // WeatherAPI key
 
 // Fetch Current Weather
 async function fetchCurrentWeather() {
@@ -43,7 +43,7 @@ function displayCurrentWeather(data) {
     `;
 }
 
-// Fetch 10-day Forecast
+// Fetch Weather Forecast
 async function fetchForecast() {
     const city = document.getElementById('city').value;
     if (!city) {
