@@ -1,32 +1,61 @@
 body {
-    background-color: #eef2f3;
+    background-image: url("weather_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
 }
 
-h1 {
-    color: #333;
+/* Add a subtle overlay to improve text readability */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent overlay */
+    z-index: -1;
+    /* Behind the content */
+}
+
+/* Center the main content and make it readable */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* White background with opacity */
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 1300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card {
-    margin: 10px;
-    background-color: #f9f9f9;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #333;
 }
 
 .card-img-top {
     width: 50px;
     height: 50px;
     margin: 10px auto;
-}
-
-.card-body {
-    text-align: center;
-    padding: 15px;
-}
-
-#weather-data {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
